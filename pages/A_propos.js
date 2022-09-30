@@ -57,36 +57,10 @@ export default function Apropo() {
                         </Text>
                         <Heading>Rschain</Heading>
                         <Text color={'gray.500'} fontSize={'lg'}>
-                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-                            nonumy eirmod tempor invidunt ut labore
+                        Fondé par le Dr. ADJA Elloh Yves Christian ,enseignant chercheur de rénomé international ,RSCHAIN voit le jour 
+                        en avril 2022  en cote d'ivoire dans la commune d'Abidjan.Sis a cocody angré 8 ieme tranche ,Rschain est une société a rsponsabilité limité unipersonnel (SARLU)
                         </Text>
-                        <Stack
-                            spacing={4}
-                            divider={
-                                <StackDivider
-                                    borderColor={useColorModeValue('gray.100', 'gray.700')}
-                                />
-                            }>
-                            <Feature
-                                icon={
-                                    <Icon as={IoAnalyticsSharp} color={'yellow.500'} w={5} h={5} />
-                                }
-                                iconBg={useColorModeValue('yellow.100', 'yellow.900')}
-                                text={'Business Planning'}
-                            />
-                            <Feature
-                                icon={<Icon as={IoLogoBitcoin} color={'green.500'} w={5} h={5} />}
-                                iconBg={useColorModeValue('green.100', 'green.900')}
-                                text={'Financial Planning'}
-                            />
-                            <Feature
-                                icon={
-                                    <Icon as={IoSearchSharp} color={'purple.500'} w={5} h={5} />
-                                }
-                                iconBg={useColorModeValue('purple.100', 'purple.900')}
-                                text={'Market Analysis'}
-                            />
-                        </Stack>
+                       
                     </Stack>
                     <Flex>
                         <Image
@@ -126,36 +100,11 @@ export default function Apropo() {
                         </Text>
                         <Heading>Rschain</Heading>
                         <Text color={'gray.500'} fontSize={'lg'}>
-                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-                            nonumy eirmod tempor invidunt ut labore
+                        Rschain nait dans l’objectif dans l’objectif premier de democratiser la technologie Blockchain et en Cote d’Ivoire et dans toute l’Afrique. 
+                        Notre coeur de metier est la Blockchain dans toutes ses formes . Nous croyons fermement que 
+                        la Blockchain peut ameliorer non seulement le quotidien des Ivoiriens ,mais aussi celui de tous les Africains.  
                         </Text>
-                        <Stack
-                            spacing={4}
-                            divider={
-                                <StackDivider
-                                    borderColor={useColorModeValue('gray.100', 'gray.700')}
-                                />
-                            }>
-                            <Feature
-                                icon={
-                                    <Icon as={IoAnalyticsSharp} color={'yellow.500'} w={5} h={5} />
-                                }
-                                iconBg={useColorModeValue('yellow.100', 'yellow.900')}
-                                text={'Business Planning'}
-                            />
-                            <Feature
-                                icon={<Icon as={IoLogoBitcoin} color={'green.500'} w={5} h={5} />}
-                                iconBg={useColorModeValue('green.100', 'green.900')}
-                                text={'Financial Planning'}
-                            />
-                            <Feature
-                                icon={
-                                    <Icon as={IoSearchSharp} color={'purple.500'} w={5} h={5} />
-                                }
-                                iconBg={useColorModeValue('purple.100', 'purple.900')}
-                                text={'Market Analysis'}
-                            />
-                        </Stack>
+                    
                     </Stack>
 
                 </SimpleGrid>
@@ -175,11 +124,7 @@ export default function Apropo() {
                             Nos Valeurs
                         </Text>
                         <Heading>Rschain</Heading>
-                        <Text color={'gray.500'} fontSize={'lg'}>
-                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-                            nonumy eirmod tempor invidunt ut labore
-
-                        </Text>
+                    
                         <Stack
                             spacing={4}
                             divider={
@@ -192,19 +137,19 @@ export default function Apropo() {
                                     <Icon as={IoAnalyticsSharp} color={'yellow.500'} w={5} h={5} />
                                 }
                                 iconBg={useColorModeValue('yellow.100', 'yellow.900')}
-                                text={'Business Planning'}
+                                text={'le travail acharné'}
                             />
                             <Feature
                                 icon={<Icon as={IoLogoBitcoin} color={'green.500'} w={5} h={5} />}
                                 iconBg={useColorModeValue('green.100', 'green.900')}
-                                text={'Financial Planning'}
+                                text={'La récherche & la créativité'}
                             />
                             <Feature
                                 icon={
                                     <Icon as={IoSearchSharp} color={'purple.500'} w={5} h={5} />
                                 }
                                 iconBg={useColorModeValue('purple.100', 'purple.900')}
-                                text={'Market Analysis'}
+                                text={'Le respect des delai'}
                             />
                         </Stack>
                     </Stack>

@@ -26,7 +26,7 @@ import {
     MdFacebook,
     MdOutlineEmail,
 } from 'react-icons/md';
-import { BsGithub, BsDiscord, BsPerson } from 'react-icons/bs';
+import { BsGithub, BsPerson, BsLinkedin } from 'react-icons/bs';
 import Nav from './Nav';
 
 
@@ -61,7 +61,7 @@ export default function Contact() {
                                                     color="#DCE2FF"
                                                     _hover={{ border: '2px solid #1C6FEB' }}
                                                     leftIcon={<MdPhone color="#1970F1" size="20px" />}>
-                                                    +225 00 00 00 00 00
+                                                   +225 27 22 23 77 89
                                                 </Button>
                                                 <Button
                                                     size="md"
@@ -71,7 +71,7 @@ export default function Contact() {
                                                     color="#DCE2FF"
                                                     _hover={{ border: '2px solid #1C6FEB' }}
                                                     leftIcon={<MdEmail color="#1970F1" size="20px" />}>
-                                                    contact@rschain.net
+                                                    lauria.guenaman@rschain.net
                                                 </Button>
                                                 <Button
                                                     size='xs'
@@ -81,7 +81,7 @@ export default function Contact() {
                                                     color="#DCE2FF"
                                                     _hover={{ border: '2px solid #1C6FEB' }}
                                                     leftIcon={<MdLocationOn color="#1970F1" size="20px" />}>
-                                                    Angre carrefour priere, Abidjan
+                                                    Angré, carrefour prière, Abidjan
                                                 </Button>
                                             </VStack>
                                         </Box>
@@ -107,12 +107,12 @@ export default function Contact() {
                                                 icon={<BsGithub size="28px" />}
                                             />
                                             <IconButton
-                                                aria-label="discord"
+                                                aria-label="linkedin"
                                                 variant="ghost"
                                                 size="lg"
                                                 isRound={true}
                                                 _hover={{ bg: '#0D74FF' }}
-                                                icon={<BsDiscord size="28px" />}
+                                                icon={<BsLinkedin size="28px" />}
                                             />
                                         </HStack>
                                     </Box>

@@ -167,18 +167,18 @@ const NAV_ITEMS = [
 
         children: [
             {
-                label: 'NFT Plateforme',
-                href: './NFT',
+                label: 'Conseils',
+               
             },
             {
-                label: 'Blockchain & Securité',
-                href: './Blockchainsecurite',
+                label: 'Audit & Securité',
+                
+            },
+            {
+                label: 'Formation',
+              
             },
         ],
-    },
-    {
-        label: 'Projets',
-        href: './Projets',
     },
     {
         label: 'contact',

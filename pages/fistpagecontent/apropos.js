@@ -12,14 +12,10 @@ import {
     Link
 } from '@chakra-ui/react';
 import {
-    IoAnalyticsSharp,
-    IoLogoBitcoin,
     IoShieldHalf,
     IoSchool
 } from 'react-icons/io5';
 import { MdOutlineTipsAndUpdates } from "react-icons/md";
-import { ReactElement } from 'react';
-import Apropo from '../A_propos';
 
 const Feature = ({ text, icon, iconBg }) => {
     return (
@@ -56,11 +52,9 @@ export default function Apropos() {
                     </Text>
                     <Heading>Rschain</Heading>
                     <Text color={'gray.500'} fontSize={'lg'}>
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-                        nonumy eirmod tempor invidunt ut labore... {''}
-                        <Link color='teal.500' href='../A_propos' textTransform={'full-width'}>
-                            Lire plus
-                        </Link>
+                    RSChain est composé d’une grande équipe de développeur dispatché par département. Nous comptons au total au seins de notre entreprise quartre (4) départements.
+                    Notamment un département DiFy, DApps, Security Blockchain et le département Conseil.
+                    
                     </Text>
                     <Stack
                         spacing={4}

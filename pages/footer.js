@@ -11,9 +11,10 @@ import {
     IconButton,
     useColorModeValue,
 } from '@chakra-ui/react';
-import { ReactNode } from 'react';
-import { FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
+
+import {FaLinkedin, FaFacebook } from 'react-icons/fa';
 import { BiMailSend } from 'react-icons/bi';
+
 
 
 
@@ -71,23 +72,18 @@ export default function Footer() {
                                 © 2022 Rschain. All rights reserved
                             </Text>
                             <Stack direction={'row'} spacing={6}>
-                                <SocialButton label={'Twitter'} href={'#'}>
-                                    <FaTwitter />
+                                <SocialButton label={'Facebook'} href={'#'}>
+                                    <FaFacebook/>
                                 </SocialButton>
-                                <SocialButton label={'YouTube'} href={'#'}>
-                                    <FaYoutube />
+                                <SocialButton label={'linkedin'} href={'#'}>
+                                    <FaLinkedin />
                                 </SocialButton>
-                                <SocialButton label={'Instagram'} href={'#'}>
-                                    <FaInstagram />
-                                </SocialButton>
+                               
                             </Stack>
                         </Stack>
                         <Stack align={'flex-start'}>
                             <ListHeader >Company</ListHeader>
                             <Link href={'./A_propos'} _hover={{ textDecoration: 'none', color: "green.600" }} >A propos</Link>
-                            <Link href={'./NFT'} _hover={{ textDecoration: 'none', color: "green.600" }} >NFT plateform</Link>
-                            <Link href={'./Blockchainsecurite'} _hover={{ textDecoration: 'none', color: "green.600" }}>Blockchain & Sécurité</Link>
-                            <Link href={'./Projets'} _hover={{ textDecoration: 'none', color: "green.600" }}>Projet</Link>
                             <Link href={'./contact'} _hover={{ textDecoration: 'none', color: "green.600" }}>Contact</Link>
                         </Stack>
                         <Stack align={'flex-start'}>
