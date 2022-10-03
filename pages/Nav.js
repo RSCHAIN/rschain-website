@@ -155,7 +155,7 @@ const DesktopSubNav = ({ label, href, subLabel }) => {
 
 const NAV_ITEMS = [
     {
-        label: 'Acceuil',
+        label: 'Accueil',
         href: '/',
     },
     {
@@ -181,7 +181,7 @@ const NAV_ITEMS = [
         ],
     },
     {
-        label: 'contact',
+        label: 'Contact',
         href: './contact',
     },
 ];

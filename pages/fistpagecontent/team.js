@@ -1,4 +1,3 @@
-
 import {
   Box,
   Flex,
@@ -19,33 +18,34 @@ function Testimonial (children ) {
 const Avatars = [
 
   {
-      src: 'josias.png',
-      name: "Josias Sehi",
-      title: 'Developpeur Blockchain',
+    src: 'josias.png',
+    name: "DR. Elloh ADJA",
+    title: 'CEO',
 
   },
   {
     src: 'josias.png',
-    name: "Souleymane Ouattara",
-    title: 'Developpeur Blockchain',
+    name: "Lauria Guenaman",
+    title: 'Représentante',
 
 },
+{
+  src: 'josias.png',
+  name: "Josias Sehi",
+  title: 'Dapps Developer',
+
+},
+
 {
   src: 'josias.png',
   name: "Nathan Digra",
-  title: 'Developpeur Blockchain',
+  title: 'Sécurity Spécialiste',
 
 },
 {
   src: 'josias.png',
-  name: "Nadia Zebato",
-  title: 'Developpeur Blockchain',
-
-},
-{
-  src: 'josias.png',
-  name: "Lauria Guenaman",
-  title: 'Developpeur Blockchain',
+  name: "Souleymane Ouattara",
+  title: 'DEFI Developer',
 
 },
 
@@ -56,11 +56,11 @@ const Avatars = [
 export default function Team() {
   return (
     <>  
-    <Box bg={useColorModeValue('gray.100', 'gray.700')}>
+    <Box bg={useColorModeValue('gray.100', 'gray.700')} >
       <Container maxW={'7xl'} py={16} as={Stack} spacing={12}>
         <Stack spacing={0} align={'center'}>
           <Heading>TEAM</Heading>
-          <Text>Nous avons la meilleur équipe qualifié de toute l'Afrique de l'Ouest dans le domaine de la blockchcain.  </Text>
+          <Text>Nous comptons parmi les start-ups les plus qualifiées de l'Afrique de l'Ouest dans le domaine de la blockchain.  </Text>
         </Stack>
         <Stack
           direction={{ base: 'column', md: 'row' }}
@@ -77,7 +77,7 @@ export default function Team() {
 >    
 <Avatar src={avat.src} alt={avat.name} size={'2xl'} marginTop={'-10'} marginInline='2'/>
 
-<Stack spacing={0} align={'center'} marginInline='2'>
+<Stack spacing={0} align={'center'} marginInline='2' borderRadius={"2xl"}>
 <Text fontWeight={600}>{avat.name}</Text>
 <Text fontSize={'sm'} color={useColorModeValue('gray.600', 'gray.400')}>
  {avat.title}

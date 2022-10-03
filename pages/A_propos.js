@@ -8,14 +8,13 @@ import {
     Stack,
     StackDivider,
     Icon,
-    useColorModeValue, Link
+    useColorModeValue,
 } from '@chakra-ui/react';
 import {
     IoAnalyticsSharp,
     IoLogoBitcoin,
     IoSearchSharp,
 } from 'react-icons/io5';
-import { ReactElement } from 'react';
 import Nav from './Nav';
 import Footer from './footer';
 
@@ -57,8 +56,9 @@ export default function Apropo() {
                         </Text>
                         <Heading>Rschain</Heading>
                         <Text color={'gray.500'} fontSize={'lg'}>
-                        Fondé par le Dr. ADJA Elloh Yves Christian ,enseignant chercheur de rénomé international ,RSCHAIN voit le jour 
-                        en avril 2022  en cote d'ivoire dans la commune d'Abidjan.Sis a cocody angré 8 ieme tranche ,Rschain est une société a rsponsabilité limité unipersonnel (SARLU)
+                        Fondé par le dr. ADJA Elloh Yves Christian, enseignant-chercheur de renommée internationale, RSCHAIN voit le jour
+                        en avril 2022 en Côte d'Ivoire dans la commune d'Abidjan. Sis à Cocody angré 8e tranche;
+                        Rschain est une société à responsabilité limitée unipersonnelle (SARL).
                         </Text>
                        
                     </Stack>
@@ -100,9 +100,10 @@ export default function Apropo() {
                         </Text>
                         <Heading>Rschain</Heading>
                         <Text color={'gray.500'} fontSize={'lg'}>
-                        Rschain nait dans l’objectif dans l’objectif premier de democratiser la technologie Blockchain et en Cote d’Ivoire et dans toute l’Afrique. 
-                        Notre coeur de metier est la Blockchain dans toutes ses formes . Nous croyons fermement que 
-                        la Blockchain peut ameliorer non seulement le quotidien des Ivoiriens ,mais aussi celui de tous les Africains.  
+                        Rschain naît dans l'objectif premier de démocratiser la technologie Blockchain et en Côte d'Ivoire et dans toute l’Afrique.
+                        Notre cœur de métier est la Blockchain dans toutes ses formes. Nous croyons fermement que
+                        La Blockchain peut améliorer non seulement le quotidien des Ivoiriens, mais aussi celui de tous les Africains.
+
                         </Text>
                     
                     </Stack>
@@ -137,19 +138,19 @@ export default function Apropo() {
                                     <Icon as={IoAnalyticsSharp} color={'yellow.500'} w={5} h={5} />
                                 }
                                 iconBg={useColorModeValue('yellow.100', 'yellow.900')}
-                                text={'le travail acharné'}
+                                text={'Le travail acharné'}
                             />
                             <Feature
                                 icon={<Icon as={IoLogoBitcoin} color={'green.500'} w={5} h={5} />}
                                 iconBg={useColorModeValue('green.100', 'green.900')}
-                                text={'La récherche & la créativité'}
+                                text={'La recherche & la créativité'}
                             />
                             <Feature
                                 icon={
                                     <Icon as={IoSearchSharp} color={'purple.500'} w={5} h={5} />
                                 }
                                 iconBg={useColorModeValue('purple.100', 'purple.900')}
-                                text={'Le respect des delais'}
+                                text={'Le respect des délais'}
                             />
                         </Stack>
                     </Stack>

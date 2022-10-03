@@ -52,9 +52,8 @@ export default function Apropos() {
                     </Text>
                     <Heading>Rschain</Heading>
                     <Text color={'gray.500'} fontSize={'lg'}>
-                    RSChain est composé d’une grande équipe de développeur dispatché par département. Nous comptons au total au seins de notre entreprise quartre (4) départements.
-                    Notamment un département DiFy, DApps, Security Blockchain et le département Conseil.
-                    
+                    RSchain est composé d’une grande équipe de développeurs dispatchés par département. Nous comptons au sein de notre entreprise, quatre (4) départements.
+                    Notamment un département DEFi, DApps, Sécurité Blockchain et le département Conseil.
                     </Text>
                     <Stack
                         spacing={4}
@@ -87,9 +86,9 @@ export default function Apropos() {
                 <Flex>
                     <Image
                         rounded={'md'}
-                        alt={'feature image'}
+                        alt={'A propos'}
                         src={
-                            'apropos1.jpeg'
+                            'apropos1..png'
                         }
                         objectFit={'cover'}
                     />
