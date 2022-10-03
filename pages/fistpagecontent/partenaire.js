@@ -8,7 +8,7 @@ export default function Partenaire() {
         <>   
          <Container maxW={'5xl'} py={12} marginTop="50px" >  
           <Box textAlign={'center'} fontSize='2xl' fontWeight={'bold'}  fontFamily={'heading'}
-            _hover={{ bg: "", color: "green.500" }}
+            _hover={{ bg: "", color: "gray.500" }}
           >  Ils Nous Font Confiance    </Box>
             <Center bg='' h='100px' color='black' flexDirection={'row'} paddingTop="10">
                 <Box m={'5'}>
