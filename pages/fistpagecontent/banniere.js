@@ -40,21 +40,21 @@ export default function Banniere() {
     const cards = [
 
         {
-            title: 'WELCOME TO RSCHAIN ',
-            text: "BLOCKCHAIN AND SECURITY",
-            image: 'baner5.jpg',
+            title: '',
+            text: "",
+            image: 'banner1.png',
 
         },
         {
             title: '',
             text: "",
-            image: 'banerimg2.jpg',
+            image: 'banner2.png',
 
         },
         {
             title: '',
             text: "",
-            image: 'banerimg3.jpg',
+            image: 'banner3.png',
         },
 
     ];
