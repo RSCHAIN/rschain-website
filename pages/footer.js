@@ -72,10 +72,10 @@ export default function Footer() {
                                 © 2022 Rschain. All rights reserved
                             </Text>
                             <Stack direction={'row'} spacing={6}>
-                                <SocialButton label={'Facebook'} href={'#'}>
+                                <SocialButton label={'Facebook'}  href={"https://www.facebook.com/Rschain-104533535649455/"}>
                                     <FaFacebook/>
                                 </SocialButton>
-                                <SocialButton label={'linkedin'} href={'#'}>
+                                <SocialButton label={'linkedin'} href={'https://www.linkedin.com/company/86048991/admin/'}>
                                     <FaLinkedin />
                                 </SocialButton>
                                

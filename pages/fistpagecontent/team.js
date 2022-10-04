@@ -24,7 +24,7 @@ const Avatars = [
 
   },
   {
-    src: 'josias.png',
+    src: 'lauria.png',
     name: "Lauria Guenaman",
     title: 'Représentante',
 

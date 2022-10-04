@@ -56,20 +56,24 @@ export default function Contact() {
                                                 <Button
                                                     size="md"
                                                     height="48px"
-                                                    width="200px"
+                                                    width="170px"
                                                     variant="ghost"
-                                                    color="#DCE2FF"
-                                                    _hover={{ border: '2px solid #1C6FEB' }}
+                                                   
+                                                    _hover={{}}
+                                                 
+                                                 
                                                     leftIcon={<MdPhone color="#1970F1" size="20px" />}>
                                                    +225 27 22 23 77 89
                                                 </Button>
                                                 <Button
                                                     size="md"
                                                     height="48px"
-                                                    width="200px"
-                                                    variant="ghost"
+                                                    width="250px"
+                                                    variant="gost"
                                                     color="#DCE2FF"
-                                                    _hover={{ border: '2px solid #1C6FEB' }}
+                                                    _hover={{}}
+                                                    
+                                                 
                                                     leftIcon={<MdEmail color="#1970F1" size="20px" />}>
                                                     lauria.guenaman@rschain.net
                                                 </Button>
@@ -79,7 +83,7 @@ export default function Contact() {
                                                     width="200px"
                                                     variant="ghost"
                                                     color="#DCE2FF"
-                                                    _hover={{ border: '2px solid #1C6FEB' }}
+                                                    _hover={{}}
                                                     leftIcon={<MdLocationOn color="#1970F1" size="20px" />}>
                                                     Angré, carrefour prière, Abidjan
                                                 </Button>
@@ -92,7 +96,9 @@ export default function Contact() {
                                             alignItems="flex-start">
                                             <IconButton
                                                 aria-label="facebook"
-                                                variant="ghost"
+                                                variant="outline"
+                                                as={'a'}
+                                                href="https://www.facebook.com/Rschain-104533535649455/"
                                                 size="lg"
                                                 isRound={true}
                                                 _hover={{ bg: '#0D74FF' }}
@@ -100,7 +106,9 @@ export default function Contact() {
                                             />
                                             <IconButton
                                                 aria-label="github"
-                                                variant="ghost"
+                                                variant="outline"
+                                                as={'a'}
+                                                href="https://github.com/RSCHAIN/"
                                                 size="lg"
                                                 isRound={true}
                                                 _hover={{ bg: '#0D74FF' }}
@@ -108,7 +116,9 @@ export default function Contact() {
                                             />
                                             <IconButton
                                                 aria-label="linkedin"
-                                                variant="ghost"
+                                                variant="outline"
+                                                as={'a'}
+                                                href="https://www.linkedin.com/company/86048991/admin/"
                                                 size="lg"
                                                 isRound={true}
                                                 _hover={{ bg: '#0D74FF' }}
