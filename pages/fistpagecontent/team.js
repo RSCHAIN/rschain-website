@@ -18,7 +18,7 @@ function Testimonial (children ) {
 const Avatars = [
 
   {
-    src: 'josias.png',
+    src: 'elloh.png',
     name: "DR. Elloh ADJA",
     title: 'CEO',
 
@@ -43,7 +43,7 @@ const Avatars = [
 
 },
 {
-  src: 'josias.png',
+  src: 'soul.jpeg',
   name: "Souleymane Ouattara",
   title: 'DEFI Developer',
 
