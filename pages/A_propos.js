@@ -140,16 +140,17 @@ export default function Apropo() {
                                 iconBg={useColorModeValue('yellow.100', 'yellow.900')}
                                 text={'Le travail acharné'}
                             />
-                            <Feature
-                                icon={<Icon as={IoLogoBitcoin} color={'green.500'} w={5} h={5} />}
-                                iconBg={useColorModeValue('green.100', 'green.900')}
-                                text={'La recherche & la créativité'}
-                            />
+                          
                             <Feature
                                 icon={
-                                    <Icon as={IoSearchSharp} color={'purple.500'} w={5} h={5} />
+                                <Icon as={IoSearchSharp} color={'purple.500'} w={5} h={5} />
                                 }
                                 iconBg={useColorModeValue('purple.100', 'purple.900')}
+                                text={'La recherche & la créativité'}  
+                            />
+                              <Feature
+                                icon={<Icon as={IoLogoBitcoin} color={'green.500'} w={5} h={5} />}
+                                iconBg={useColorModeValue('green.100', 'green.900')}
                                 text={'Le respect des délais'}
                             />
                         </Stack>

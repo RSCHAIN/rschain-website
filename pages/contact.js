@@ -29,8 +29,8 @@ import {
 import { BsGithub, BsPerson, BsLinkedin } from 'react-icons/bs';
 import Nav from './Nav';
 
-
 export default function Contact() {
+   
     return (
         <>
             <Nav />
