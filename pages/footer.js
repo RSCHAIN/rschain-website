@@ -15,10 +15,6 @@ import {
 import {FaLinkedin, FaFacebook } from 'react-icons/fa';
 import { BiMailSend } from 'react-icons/bi';
 
-
-
-
-
 const SocialButton = ({
     children,
     label,

@@ -12,7 +12,6 @@ import {
     PopoverTrigger,
     PopoverContent,
     useColorModeValue,
-    useBreakpointValue,
     useDisclosure,
     Image
 } from '@chakra-ui/react';
@@ -168,14 +167,18 @@ const NAV_ITEMS = [
         children: [
             {
                 label: 'Conseils',
+                href:'./conseils',
                
             },
             {
                 label: 'Audit & Securité',
+                href:'./audit',
+              
                 
             },
             {
                 label: 'Formation',
+                href:'./formation',
               
             },
         ],

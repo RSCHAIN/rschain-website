@@ -131,6 +131,7 @@ export default function Contact() {
                                     <Box bg="white" borderRadius="lg">
                                         <Box m={8} color="#0B0E3F">
                                             <VStack spacing={5}>
+                                                
                                                 <FormControl id="name">
                                                     <FormLabel>Nom</FormLabel>
                                                     <InputGroup borderColor="#E0E1E7">

@@ -1,6 +1,6 @@
 import '../styles/globals.css'
-import Link from 'next/link'
-import { ChakraProvider } from '@chakra-ui/react'
+import { ChakraProvider,Box } from '@chakra-ui/react'
+import HookForm from './contact'
 //import 'bootstrap/dist/css/bootstrap.min.css';
 
 function MyApp({ Component, pageProps }) {
@@ -10,7 +10,6 @@ function MyApp({ Component, pageProps }) {
     <ChakraProvider>
 
       <Component {...pageProps} />
-
     </ChakraProvider>
 
   )
