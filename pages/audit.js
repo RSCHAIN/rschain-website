@@ -1,6 +1,9 @@
 import React from 'react';
-import { Box, Center,Stack, Heading,Text, Button,Icon,Arrow,useColorModeValue,Container,
+import { Box, Center,Stack, Heading,Text,Flex,VStack,useBreakpointValue,
+   Button,Icon,Arrow,useColorModeValue,
+  Container,
       createIcon,Badge,Image,StarIcon, Link } from '@chakra-ui/react';
+import {BsArrowDownCircleFill} from "react-icons/bs";
 import Footer from './footer';
 import Nav from './Nav';
 
@@ -22,16 +25,34 @@ function audit(props) {
       });
     return (
         <>
+        <Nav/>
        
-            <Box 
-            height={'md'}
-            backgroundPosition='center'
-            backgroundRepeat="no-repeat"
-            backgroundSize="cover"
-            bgImage={'audits.png'}
-            
-            >         
-            </Box>
+       <Flex
+      w={'full'}
+      h={'md'}
+      backgroundImage={
+        'url(https://images.unsplash.com/photo-1600267175161-cfaa711b4a81?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80)'
+      }
+      backgroundSize={'cover'}
+      backgroundPosition={'center center'}>
+      <VStack
+        w={'full'}
+        justify={'center'}
+        
+        bgGradient={'linear(to-r, blackAlpha.600, transparent)'}>
+        <Stack maxW={'5xl'} align={'center'} spacing={6}>
+          <Heading
+            color={'white'}
+            w='-webkit-fit-content'
+           >
+            ENSEMBLE BATISSONS UN MONDE PLUS SECURISE
+          </Heading>
+          <Center> <Icon as={BsArrowDownCircleFill}  w={12} h={12} color='yellow' /> </Center>
+          
+       
+        </Stack>
+      </VStack>
+    </Flex>
          
             <Box 
             height={'md'}
@@ -39,8 +60,6 @@ function audit(props) {
             backgroundRepeat="no-repeat"
             backgroundSize="cover"
             bg={'orange.200'}
-            mt='-10'
-          
             >  
            
                 <Heading fontFamily={'fantasy'} paddingTop='14' textAlign={'center'}>

@@ -21,6 +21,7 @@ import {
     CloseIcon,
     ChevronRightIcon
 } from '@chakra-ui/icons';
+import { BsPiggyBank } from 'react-icons/bs';
 
 export default function Nav() {
     const { isOpen, onToggle } = useDisclosure();
@@ -28,14 +29,14 @@ export default function Nav() {
     return (
         <Box >
             <Flex
-                bg={useColorModeValue('Background', 'gray.800')}
-                color={useColorModeValue('gray.600', 'white')}
-                minH={'60px'}
+                bg={useColorModeValue('Background', 'white.400')}
+                color={useColorModeValue('white,gray')}
+                minH={'50px'}
                 py={{ base: 2 }}
                 px={{ base: 4 }}
-                borderBottom={1}
-                borderStyle={'solid'}
-                borderColor={useColorModeValue('gray.200', 'gray.900')}
+             
+            
+                
                 align={'center'}>
 
 
@@ -55,13 +56,41 @@ export default function Nav() {
                 <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
                     <Box w={'36'} h={'12'}
                     >
-                        <Image src='Logo2.png' alt='RSCHAIN' />
+                        <Image src='logo.png' alt='RSCHAIN' />
                     </Box>
 
                     <Flex display={{ base: 'none', md: 'flex' }} ml={10} mt={'5'}>
                         <DesktopNav />
                     </Flex>
                 </Flex>
+                <Stack
+        ml={'20'}
+          flex={{ base: 3, md: 0 }}
+          justify={'flex-end'}
+          direction={'row'}
+          spacing={6}>
+          <Button
+            as={'a'}
+            fontSize={'sm'}
+            fontWeight={600}
+            variant={'link'}
+            href={'#'}
+            _hover={{textDecoration:'none',color:'blackAlpha'}}>
+            Sign In
+          </Button>
+          <Button
+            display={{ base: 'none', md: 'inline-flex' }}
+            fontSize={'sm'}
+            fontWeight={600}
+            color={'white'}
+            bg={'pink.400'}
+            href={'#'}
+            _hover={{
+              bg: 'pink.300',
+            }}>
+            Sign Up
+          </Button>
+        </Stack>
             </Flex>
 
             <Collapse in={isOpen} animateOpacity>
@@ -86,7 +115,7 @@ const DesktopNav = () => {
                                 p={2}
                                 href={navItem.href ?? '#'}
                                 fontSize={'sm'}
-                                fontWeight={500}
+                                fontWeight={800}
                                 color={linkColor}
                                 _hover={{
                                     textDecoration: 'none',

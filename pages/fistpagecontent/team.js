@@ -39,7 +39,7 @@ const Avatars = [
 {
   src: 'nathan.jpeg',
   name: "Nathanael Digra",
-  title: 'Sécurity Spécialiste',
+  title: 'Security Spécialiste',
 
 },
 {

@@ -8,143 +8,142 @@ import {
   Stack,
   Icon,
   useColorModeValue,
-  createIcon,Badge,Image,StarIcon, Center, Link
+  createIcon, Badge, Image, StarIcon, Center, Link
 } from '@chakra-ui/react';
 import Footer from './footer';
+import Nav from './Nav';
 
 
 
 
 export default function CallToActionWithAnnotation() {
 
-  
+
 
   return (
-    <> 
-   
-    <Box size={'100%'} bg='blue.50'>  
-      <Head>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap"
-          rel="stylesheet"
-        />
-      </Head>
+    <>
+      <Nav/>
+      <Box size={'100%'} bg='blue.100'>
+        <Head>
+          <link
+            href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap"
+            rel="stylesheet"
+          />
+        </Head>
 
-      <Container maxW={'3xl'} >
-        <Stack
-          as={Box}
-          textAlign={'center'}
-          spacing={{ base: 8, md: 14 }}
-          py={{ base: 20, md: 36 }}>
-          <Heading
-            fontWeight={600}
-            fontSize={{ base: '2xl', sm: '4xl', md: '6xl' }}
-            lineHeight={'110%'}>
-            RSCHAIN TOP EDUCATION<br />
-            <Text as={'span'} color={'green.400'}>
-              Learn About Everything Today 
-            </Text>
-          </Heading>
-          <Text color={'gray.500'}>
-           Nous mettons a votre disposition des formations IT <strong>(information technologie) </strong> completes qui porte sur des thematiques variées.
-          </Text>
+        <Container maxW={'3xl'} >
           <Stack
-            direction={'column'}
-            spacing={3}
-            align={'center'}
-            alignSelf={'center'}
-            position={'relative'}>
-            <Button
-              colorScheme={'green'}
-              bg={'green.400'}
-              rounded={'full'}
-              px={6}
-              _hover={{
-                bg: 'green.500',
-              }}>
-              Commencer
-            </Button>
-            <Button variant={'link'} colorScheme={'blue'} size={'sm'}>
-            plus d'infos
-            </Button>
-            <Box>
-              <Icon
-                as={Arrow}
-                color={useColorModeValue('gray.800', 'gray.300')}
-                w={71}
-                position={'absolute'}
-                right={-71}
-                top={'10px'}
-              />
-              <Text
-                fontSize={'lg'}
-                fontFamily={'Caveat'}
-                position={'absolute'}
-                right={'-125px'}
-                top={'-15px'}
-                transform={'rotate(10deg)'}>
-                Dr. Elloh ADJA
+            as={Box}
+            textAlign={'center'}
+            spacing={{ base: 8, md: 14 }}
+            py={{ base: 20, md: 36 }}>
+            <Heading
+              fontWeight={600}
+              fontSize={{ base: '2xl', sm: '4xl', md: '6xl' }}
+              lineHeight={'110%'}>
+              RSCHAIN TOP EDUCATION<br />
+              <Text as={'span'} color={'green.400'}>
+              L'Apprentissage Devient Simple et Fiable
               </Text>
-            </Box>
+            </Heading>
+            <Text color={'gray.500'}>
+              Nous mettons a votre disposition des formations IT <strong>(information technologie) </strong> completes qui porte sur des thematiques variées.
+            </Text>
+            <Stack
+              direction={'column'}
+              spacing={3}
+              align={'center'}
+              alignSelf={'center'}
+              position={'relative'}>
+              <Button
+                colorScheme={'green'}
+                bg={'pink.300'}
+                rounded={'full'}
+                px={6}
+                _hover={{
+                  bg: 'green.400',
+                }}>
+                Commencer
+              </Button>
+            
+              <Box>
+                <Icon
+                  as={Arrow}
+                  color={useColorModeValue('gray.800', 'gray.300')}
+                  w={71}
+                  position={'absolute'}
+                  right={-71}
+                  top={'10px'}
+                />
+                <Text
+                  fontSize={'lg'}
+                  fontFamily={'Caveat'}
+                  position={'absolute'}
+                  right={'-125px'}
+                  top={'-15px'}
+                  transform={'rotate(10deg)'}>
+                  Dr. Elloh ADJA
+                </Text>
+              </Box>
+            </Stack>
           </Stack>
-        </Stack>
-      </Container>
-     
-      </Box>
-    {/** formation box  */}
-   
-<Center size='md' as='span'    m={'2'}  padding='2'   >
-<Box padding={'5'}>
-  
-<Image src='image.png' alt='Dan Abramov' />
-<Link as={'details'} textDecorationLine='none' _hover={{textDecoration:'none'}}> 
-<Text bg={'blue.50'} align='center'> <strong>Blockchain</strong> <br></br> c'est une formation complete <br></br> qui vous apprend les bases <br></br>  de la technologie blockchain
-</Text>
-</Link>
-</Box>
-<Box padding={'5'}>
-<Image src='image.png' alt='Dan Abramov' />
-<Link as={'details'} textDecorationLine='none' _hover={{textDecoration:'none'}}> 
-<Text bg={'blue.50'} align='center'> <strong>Blockchain</strong> <br></br> c'est une formation complete <br></br> qui vous apprend les bases <br></br>  de la technologie blockchain
-</Text>
-</Link>
-</Box>
-<Box padding={'5'}>
-<Image src='image.png' alt='Dan Abramov' />
-<Link as={'details'} textDecorationLine='none' _hover={{textDecoration:'none',textTransform:'capitalize'}}> 
-<Text bg={'blue.50'} align='center'> <strong>Blockchain</strong> <br></br> c'est une formation complete <br></br> qui vous apprend les bases <br></br>  de la technologie blockchain
-</Text>
-</Link>
-</Box>
-      </Center>
-      <Center size='md' as='span'    m={'2'}  padding='2'   >
-<Box padding={'5'}>
-<Image src='image.png' alt='Dan Abramov' />
-<Link as={'details'} _hover={{textDecoration:'none'}}> 
-<Text bg={'blue.50'} align='center'> <strong>Blockchain</strong> <br></br> c'est une formation complete <br></br> qui vous apprend les bases <br></br>  de la technologie blockchain
-</Text>
-</Link>
-</Box>
-<Box padding={'5'}>
-<Image src='image.png' alt='Dan Abramov' />
-<Link as={'details'} _hover={{textDecoration:'none'}}> 
-<Text bg={'blue.50'} align='center'> <strong>Blockchain</strong> <br></br> c'est une formation complete <br></br> qui vous apprend les bases <br></br>  de la technologie blockchain
-</Text>
-</Link>
-</Box>
-<Box padding={'5'}>
-<Image src='image.png' alt='Dan Abramov' />
-<Link as={'details'} _hover={{textDecoration:'none'}}> 
-<Text bg={'blue.50'} align='center'> <strong>Blockchain</strong> <br></br> c'est une formation complete <br></br> qui vous apprend les bases <br></br>  de la technologie blockchain
-</Text>
-</Link>
-</Box>
-      </Center>
-      
-     <Footer/>
+        </Container>
 
-      
-  
+      </Box>
+      {/** formation box  */}
+
+      <Center size='md' as='span' m={'2'} padding='2'   >
+        <Box padding={'5'}>
+
+          <Image src='image.png' alt='Dan Abramov' />
+          <Link as={'details'} textDecorationLine='none' _hover={{ textDecoration: 'none' }}>
+            <Text bg={'blue.50'} align='center'> <strong>Blockchain</strong> <br></br> c'est une formation complete <br></br> qui vous apprend les bases <br></br>  de la technologie blockchain
+            </Text>
+          </Link>
+        </Box>
+        <Box padding={'5'}>
+          <Image src='image.png' alt='Dan Abramov' />
+          <Link as={'details'} textDecorationLine='none' _hover={{ textDecoration: 'none' }}>
+            <Text bg={'blue.50'} align='center'> <strong>Blockchain</strong> <br></br> c'est une formation complete <br></br> qui vous apprend les bases <br></br>  de la technologie blockchain
+            </Text>
+          </Link>
+        </Box>
+        <Box padding={'5'}>
+          <Image src='image.png' alt='Dan Abramov' />
+          <Link as={'details'} textDecorationLine='none' _hover={{ textDecoration: 'none', textTransform: 'capitalize' }}>
+            <Text bg={'blue.50'} align='center'> <strong>Blockchain</strong> <br></br> c'est une formation complete <br></br> qui vous apprend les bases <br></br>  de la technologie blockchain
+            </Text>
+          </Link>
+        </Box>
+      </Center>
+      <Center size='md' as='span' m={'2'} padding='2'   >
+        <Box padding={'5'}>
+          <Image src='image.png' alt='Dan Abramov' />
+          <Link as={'details'} _hover={{ textDecoration: 'none' }}>
+            <Text bg={'blue.50'} align='center'> <strong>Blockchain</strong> <br></br> c'est une formation complete <br></br> qui vous apprend les bases <br></br>  de la technologie blockchain
+            </Text>
+          </Link>
+        </Box>
+        <Box padding={'5'}>
+          <Image src='image.png' alt='Dan Abramov' />
+          <Link as={'details'} _hover={{ textDecoration: 'none' }}>
+            <Text bg={'blue.50'} align='center'> <strong>Blockchain</strong> <br></br> c'est une formation complete <br></br> qui vous apprend les bases <br></br>  de la technologie blockchain
+            </Text>
+          </Link>
+        </Box>
+        <Box padding={'5'}>
+          <Image src='image.png' alt='Dan Abramov' />
+          <Link as={'details'} _hover={{ textDecoration: 'none' }}>
+            <Text bg={'blue.50'} align='center'> <strong>Blockchain</strong> <br></br> c'est une formation complete <br></br> qui vous apprend les bases <br></br>  de la technologie blockchain
+            </Text>
+          </Link>
+        </Box>
+      </Center>
+
+      <Footer />
+
+
+
     </>
   );
 }
@@ -162,15 +161,15 @@ const Arrow = createIcon({
   ),
 });
 
-const  AirbnbCard = () => {
- const  imageUrl = 'josias.png';
- const imageAlt = 'Rear view of modern home with pool';
- const beds = 3;
- const baths = 2;
- const title = 'Modern home in city center in the heart of historic Los Angeles';
- const formattedPrice = '$1,900.00';
- const reviewCount = 34;
- const rating =  4;
+const AirbnbCard = () => {
+  const imageUrl = 'josias.png';
+  const imageAlt = 'Rear view of modern home with pool';
+  const beds = 3;
+  const baths = 2;
+  const title = 'Modern home in city center in the heart of historic Los Angeles';
+  const formattedPrice = '$1,900.00';
+  const reviewCount = 34;
+  const rating = 4;
   return (
     <Box maxW='sm' borderWidth='1px' borderRadius='lg' overflow='hidden'>
       <Image src={imageUrl} alt={imageAlt} />

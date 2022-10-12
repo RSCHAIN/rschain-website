@@ -34,7 +34,7 @@ export default function Contact() {
     return (
         <>
             <Nav />
-            <Container bgImage={'apropos1.jpeg'} maxW="full" mt={0} centerContent overflow="hidden">
+            <Container bgImage={'apropos1..png'} maxW="full" mt={0} centerContent overflow="hidden">
 
                 <Flex>
                     <Box

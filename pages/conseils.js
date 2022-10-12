@@ -8,9 +8,13 @@ import {
     Button,
     Image, Box, Center, Link, Avatar,
     useColorModeValue,
-    VStack,
+    VStack, Wrap, WrapItem, Head, List, ListItem, ListIcon, MdCheckCircle, MdSettings, UnorderedList,
+    useBreakpointValue,
+    Icon,
 } from '@chakra-ui/react';
 import Footer from './footer';
+import { AiFillCaretRight,AiFillCaretDown } from "react-icons/ai";
+import Nav from './Nav';
 
 const Testimonial = (children) => {
     return <Box>{children}</Box>;
@@ -86,6 +90,9 @@ const TestimonialAvatar = (
 export default function Conseils() {
     return (
 
+        <>  
+        <Nav/>
+
         <VStack>
             <Container maxW={'5xl'}>
                 <Stack
@@ -116,7 +123,7 @@ export default function Conseils() {
                             _hover={{ bg: 'yellow' }}>
                             Commencer
                         </Button>
-                        <Button as={'a'} rounded={'full'} px={6} href='#smartcontract'>
+                        <Button as={'a'} rounded={'full'} px={6} href='#Nous developpons'>
                             En savoir Plus
                         </Button>
                     </Stack>
@@ -124,52 +131,78 @@ export default function Conseils() {
                         <Image src='conseils.webp' alt='Conseils' />
                     </Flex>
                 </Stack>
-                <Box
-                    height={'xs'}
-                    backgroundPosition='center'
-                    backgroundRepeat="no-repeat"
-                    backgroundSize="cover"
-                    bg={'cyan.50'}
+          
 
-                >
-                    {/** Smart contract section */}
-                    <Center id='smartcontract' size='md' as='span' m={'2'} padding='8'   >
-                        <Box padding={'5'} >
-                            <Link as={'a'} textDecorationLine='none' _hover={{ textDecoration: 'none', }}>
-
-                                <Image src='smartcontract.png' alt='Rschain' borderRadius={'xl'}
-                                />
-
-                            </Link>
-                        </Box>
-                        {/** test box section */}
-                        <Box padding={'5'} >
-                            <Link as={'a'} textDecorationLine='none' _hover={{ textDecoration: 'none' }}>
-
-                                <Image src='test.png' alt='Rschain' borderRadius={'2xl'} />
-
-                            </Link>
-                        </Box>
-                        {/** Deploy box section */}
-                        <Box padding={'5'} >
-                            <Link as={'a'} textDecorationLine='none' _hover={{ textDecoration: 'none' }}>
-
-                                <Image src='deploy.png' alt='Rschain' borderRadius={'3xl'} />
-
-                            </Link>
-                        </Box>
-                    </Center>
-                </Box>
-
-            
             </Container>
-            {/**testimonial section */}
+            {/**smart contract section*/}
+            <Box colorScheme='yellow' bg={'orange.300'} w='100%' color='white' h={'2xl'} direction='row' borderRadius={'2xl'}>
 
-           
+                <Center size='md' as='span' m={'2'} padding='2' mt={'20'}>
+                    <Box padding={'5'} bg='orange.500' w={'auto'} h='auto' borderRadius={'2xl'}>
+                        <Text align={'center'} pb='4'  >   Nous developpons </Text>
+                        <UnorderedList>
+                            <ListItem> Smart contract</ListItem>
+                            <ListItem> Actifs Numériques</ListItem>
+                            <ListItem>Portefeuils numeriques </ListItem>
+                            <ListItem> DAPPs (Application decentralisées)</ListItem>
+                            <ListItem> DEFI (Finance Decentralisée)</ListItem>
+                            <ListItem> Intégration Front</ListItem>
+                        </UnorderedList>
+
+                    </Box>  
+
+                    <Stack align={'center'} m='12'> 
+                            
+                     <Icon as={AiFillCaretRight}  w={12} h={12}  /> 
+                        
+                    </Stack>
+                 
+
+                    <Box padding={'5'} bg='orange.500' w={'auto'} h='auto' ml={'5'} borderRadius={'2xl'}>
+                        <Text align={'center'}> Usage </Text>
+                        <UnorderedList>
+                            <ListItem>Certification et Tracabikité </ListItem>
+                            <ListItem>Automatisation des processus</ListItem>
+                            <ListItem>Gestion des droits numeriques</ListItem>
+                            <ListItem>sécurisation des processus</ListItem>
+                            <ListItem>sécurisation des processus</ListItem>
+                            <ListItem>sécurisation des processus</ListItem>
+                            <ListItem>sécurisation des processus</ListItem>
+                        </UnorderedList>
+
+                    </Box>
+
+                </Center>  
+
+                <Stack align={'center'} m='2'> 
+                            
+                            <Icon as={AiFillCaretDown}  w={12} h={12}  /> 
+                               
+                           </Stack>
+
+                <Center size='md' as='span' m={'2'} padding='2' mt={'16'}>
+                    <Box padding={'5'} bg='orange.500' w={'80'} h='44' borderRadius={'2xl'}>
+                        <Text align={'center'}> Les protocols </Text>
+                        <UnorderedList textAlign={'justify'}>
+                            <ListItem> Ethereum </ListItem>
+                            <ListItem> Cardano</ListItem>
+                            <ListItem>UniSwap</ListItem>
+                            <ListItem>SushiSwap</ListItem>
+                            <ListItem>Cosmos</ListItem>
+                            
+                        </UnorderedList>
+
+                    </Box>  
+
+                </Center>  
+
+
+
+            </Box>
 
             <Footer />
         </VStack>
-       
 
+        </>
     );
 }
