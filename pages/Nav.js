@@ -19,9 +19,9 @@ import {
 import {
     HamburgerIcon,
     CloseIcon,
-    ChevronRightIcon
+    ChevronRightIcon,ChevronDownIcon
 } from '@chakra-ui/icons';
-import { BsPiggyBank } from 'react-icons/bs';
+
 
 export default function Nav() {
     const { isOpen, onToggle } = useDisclosure();
@@ -34,11 +34,7 @@ export default function Nav() {
                 minH={'50px'}
                 py={{ base: 2 }}
                 px={{ base: 4 }}
-             
-            
-                
                 align={'center'}>
-
 
                 <Flex
                     flex={{ base: 1, md: 'auto' }}
@@ -64,43 +60,43 @@ export default function Nav() {
                     </Flex>
                 </Flex>
                 <Stack
-        ml={'20'}
-          flex={{ base: 3, md: 0 }}
-          justify={'flex-end'}
-          direction={'row'}
-          spacing={6}>
-          <Button
-            as={'a'}
-            fontSize={'sm'}
-            fontWeight={600}
-            variant={'link'}
-            href={'#'}
-            _hover={{textDecoration:'none',color:'blackAlpha'}}>
-            Sign In
-          </Button>
-          <Button
-            display={{ base: 'none', md: 'inline-flex' }}
-            fontSize={'sm'}
-            fontWeight={600}
-            color={'white'}
-            bg={'pink.400'}
-            href={'#'}
-            _hover={{
-              bg: 'pink.300',
-            }}>
-            Sign Up
-          </Button>
-        </Stack>
+                    ml={'20'}
+                    flex={{ base: 3, md: 0 }}
+                    justify={'flex-end'}
+                    direction={'row'}
+                    spacing={6}>
+                    <Button
+                        as={'a'}
+                        fontSize={'sm'}
+                        fontWeight={600}
+                        variant={'link'}
+                        href={'#'}
+                        _hover={{ textDecoration: 'none', color: 'blackAlpha' }}>
+                        Sign In
+                    </Button>
+                    <Button
+                        display={{ base: 'none', md: 'inline-flex' }}
+                        fontSize={'sm'}
+                        fontWeight={600}
+                        color={'white'}
+                        bg={'pink.400'}
+                        href={'#'}
+                        _hover={{
+                            bg: 'pink.300',
+                        }}>
+                        Sign Up
+                    </Button>
+                </Stack>
             </Flex>
 
             <Collapse in={isOpen} animateOpacity>
-
+            <MobileNav />
             </Collapse>
         </Box>
     );
 }
 
-const DesktopNav = () => {
+const DesktopNav = (children) => {
     const linkColor = useColorModeValue('gray.600', 'gray.200');
     const linkHoverColor = useColorModeValue('gray.800', 'white');
     const popoverContentBgColor = useColorModeValue('white', 'gray.800');
@@ -181,6 +177,72 @@ const DesktopSubNav = ({ label, href, subLabel }) => {
     );
 };
 
+const MobileNav = () => {
+    return (
+      <Stack
+        bg={useColorModeValue('white', 'gray.800')}
+        p={4}
+        display={{ md: 'none' }}>
+        {NAV_ITEMS.map((navItem) => (
+          <MobileNavItem key={navItem.label} {...navItem} />
+        ))}
+      </Stack>
+    );
+  };
+
+  const MobileNavItem = ({label, children, href} ) => {
+    const { isOpen, onToggle } = useDisclosure();
+  
+    return (
+      <Stack spacing={4} onClick={children && onToggle}>
+        <Flex
+          py={2}
+          as={Link}
+          href={href ?? '#'}
+          justify={'space-between'}
+          align={'center'}
+          _hover={{
+            textDecoration: 'none',
+          }}>
+          <Text
+            fontWeight={600}
+            color={useColorModeValue('gray.600', 'gray.200')}>
+            {label}
+          </Text>
+          {children && (
+            <Icon
+              as={ChevronDownIcon}
+              transition={'all .25s ease-in-out'}
+              transform={isOpen ? 'rotate(180deg)' : ''}
+              w={6}
+              h={6}
+            />
+          )}
+        </Flex>
+        <Collapse in={isOpen} animateOpacity style={{ marginTop: '0!important' }}>
+        <Stack
+          mt={2}
+          pl={4}
+          borderLeft={1}
+          borderStyle={'solid'}
+          borderColor={useColorModeValue('gray.200', 'gray.700')}
+          align={'start'}>
+          {children &&
+            children.map((child) => (
+              <Link key={child.label} py={2} href={child.href}>
+                {child.label}
+              </Link>
+            ))}
+        </Stack>
+      </Collapse>
+    </Stack>
+  );
+};  
+
+
+
+
+
 const NAV_ITEMS = [
     {
         label: 'Accueil',
@@ -196,19 +258,19 @@ const NAV_ITEMS = [
         children: [
             {
                 label: 'Conseils',
-                href:'./conseils',
-               
+                href: './conseils',
+
             },
             {
                 label: 'Audit & Securité',
-                href:'./audit',
-              
-                
+                href: './audit',
+
+
             },
             {
                 label: 'Formation',
-                href:'./formation',
-              
+                href: './formation',
+
             },
         ],
     },
