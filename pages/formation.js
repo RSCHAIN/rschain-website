@@ -22,7 +22,7 @@ export default function CallToActionWithAnnotation() {
 
   return (
     <>
-      <Nav/>
+      <Nav />
       <Box size={'100%'} bg='blue.100'>
         <Head>
           <link
@@ -43,7 +43,7 @@ export default function CallToActionWithAnnotation() {
               lineHeight={'110%'}>
               RSCHAIN TOP EDUCATION<br />
               <Text as={'span'} color={'green.400'}>
-              L'Apprentissage Devient Simple et Fiable
+                L'Apprentissage Devient Simple et Fiable
               </Text>
             </Heading>
             <Text color={'gray.500'}>
@@ -65,7 +65,7 @@ export default function CallToActionWithAnnotation() {
                 }}>
                 Commencer
               </Button>
-            
+
               <Box>
                 <Icon
                   as={Arrow}

@@ -13,7 +13,7 @@ import {
     Icon,
 } from '@chakra-ui/react';
 import Footer from './footer';
-import { AiFillCaretRight,AiFillCaretDown } from "react-icons/ai";
+import { AiFillCaretRight, AiFillCaretDown } from "react-icons/ai";
 import Nav from './Nav';
 
 const Testimonial = (children) => {
@@ -90,118 +90,118 @@ const TestimonialAvatar = (
 export default function Conseils() {
     return (
 
-        <>  
-        <Nav/>
+        <>
+            <Nav />
 
-        <VStack>
-            <Container maxW={'5xl'}>
-                <Stack
-                    textAlign={'center'}
-                    align={'center'}
-                    spacing={{ base: 8, md: 10 }}
-                    py={{ base: 20, md: 28 }}>
-                    <Heading
-                        fontWeight={600}
-                        fontSize={{ base: '3xl', sm: '4xl', md: '6xl' }}
-                        lineHeight={'110%'}>
-                        FAITES VOUS ACCOMPAGNER{' '}
-                        <Text as={'span'} color={'red.600'}>
-                            PAR NOS EXPERTS
+            <VStack>
+                <Container maxW={'5xl'}>
+                    <Stack
+                        textAlign={'center'}
+                        align={'center'}
+                        spacing={{ base: 8, md: 10 }}
+                        py={{ base: 20, md: 28 }}>
+                        <Heading
+                            fontWeight={600}
+                            fontSize={{ base: '3xl', sm: '4xl', md: '6xl' }}
+                            lineHeight={'110%'}>
+                            FAITES VOUS ACCOMPAGNER{' '}
+                            <Text as={'span'} color={'red.600'}>
+                                PAR NOS EXPERTS
+                            </Text>
+                        </Heading>
+                        <Text color={'gray.500'} maxW={'3xl'}>
+                            Never miss a meeting. Never be late for one too. Keep track of your
+                            meetings and receive smart reminders in appropriate times. Read your
+                            smart “Daily Agenda” every morning.
                         </Text>
-                    </Heading>
-                    <Text color={'gray.500'} maxW={'3xl'}>
-                        Never miss a meeting. Never be late for one too. Keep track of your
-                        meetings and receive smart reminders in appropriate times. Read your
-                        smart “Daily Agenda” every morning.
-                    </Text>
-                    <Stack spacing={6} direction={'row'}>
-                        <Button
-                            rounded={'full'}
-                            px={6}
-                            colorScheme={'yellow'}
-                            bg={'red.300'}
-                            _hover={{ bg: 'yellow' }}>
-                            Commencer
-                        </Button>
-                        <Button as={'a'} rounded={'full'} px={6} href='#Nous developpons'>
-                            En savoir Plus
-                        </Button>
+                        <Stack spacing={6} direction={'row'}>
+                            <Button
+                                rounded={'full'}
+                                px={6}
+                                colorScheme={'yellow'}
+                                bg={'red.300'}
+                                _hover={{ bg: 'yellow' }}>
+                                Commencer
+                            </Button>
+                            <Button as={'a'} rounded={'full'} px={6} href='#Nous developpons'>
+                                En savoir Plus
+                            </Button>
+                        </Stack>
+                        <Flex w={'full'}>
+                            <Image src='conseils.webp' alt='Conseils' />
+                        </Flex>
                     </Stack>
-                    <Flex w={'full'}>
-                        <Image src='conseils.webp' alt='Conseils' />
-                    </Flex>
-                </Stack>
-          
 
-            </Container>
-            {/**smart contract section*/}
-            <Box colorScheme='yellow' bg={'orange.300'} w='100%' color='white' h={'2xl'} direction='row' borderRadius={'2xl'}>
 
-                <Center size='md' as='span' m={'2'} padding='2' mt={'20'}>
-                    <Box padding={'5'} bg='orange.500' w={'auto'} h='auto' borderRadius={'2xl'}>
-                        <Text align={'center'} pb='4'  >   Nous developpons </Text>
-                        <UnorderedList>
-                            <ListItem> Smart contract</ListItem>
-                            <ListItem> Actifs Numériques</ListItem>
-                            <ListItem>Portefeuils numeriques </ListItem>
-                            <ListItem> DAPPs (Application decentralisées)</ListItem>
-                            <ListItem> DEFI (Finance Decentralisée)</ListItem>
-                            <ListItem> Intégration Front</ListItem>
-                        </UnorderedList>
+                </Container>
+                {/**smart contract section*/}
+                <Box colorScheme='yellow' bg={'orange.300'} w='100%' color='white' h={'2xl'} direction='row' borderRadius={'2xl'}>
 
-                    </Box>  
+                    <Center size='md' as='span' m={'2'} padding='2' mt={'20'}>
+                        <Box padding={'5'} bg='orange.500' w={'auto'} h='auto' borderRadius={'2xl'}>
+                            <Text align={'center'} pb='4'  >   Nous developpons </Text>
+                            <UnorderedList>
+                                <ListItem> Smart contract</ListItem>
+                                <ListItem> Actifs Numériques</ListItem>
+                                <ListItem>Portefeuils numeriques </ListItem>
+                                <ListItem> DAPPs (Application decentralisées)</ListItem>
+                                <ListItem> DEFI (Finance Decentralisée)</ListItem>
+                                <ListItem> Intégration Front</ListItem>
+                            </UnorderedList>
 
-                    <Stack align={'center'} m='12'> 
-                            
-                     <Icon as={AiFillCaretRight}  w={12} h={12}  /> 
-                        
+                        </Box>
+
+                        <Stack align={'center'} m='12'>
+
+                            <Icon as={AiFillCaretRight} w={12} h={12} />
+
+                        </Stack>
+
+
+                        <Box padding={'5'} bg='orange.500' w={'auto'} h='auto' ml={'5'} borderRadius={'2xl'}>
+                            <Text align={'center'}> Usage </Text>
+                            <UnorderedList>
+                                <ListItem>Certification et Tracabikité </ListItem>
+                                <ListItem>Automatisation des processus</ListItem>
+                                <ListItem>Gestion des droits numeriques</ListItem>
+                                <ListItem>sécurisation des processus</ListItem>
+                                <ListItem>sécurisation des processus</ListItem>
+                                <ListItem>sécurisation des processus</ListItem>
+                                <ListItem>sécurisation des processus</ListItem>
+                            </UnorderedList>
+
+                        </Box>
+
+                    </Center>
+
+                    <Stack align={'center'} m='2'>
+
+                        <Icon as={AiFillCaretDown} w={12} h={12} />
+
                     </Stack>
-                 
 
-                    <Box padding={'5'} bg='orange.500' w={'auto'} h='auto' ml={'5'} borderRadius={'2xl'}>
-                        <Text align={'center'}> Usage </Text>
-                        <UnorderedList>
-                            <ListItem>Certification et Tracabikité </ListItem>
-                            <ListItem>Automatisation des processus</ListItem>
-                            <ListItem>Gestion des droits numeriques</ListItem>
-                            <ListItem>sécurisation des processus</ListItem>
-                            <ListItem>sécurisation des processus</ListItem>
-                            <ListItem>sécurisation des processus</ListItem>
-                            <ListItem>sécurisation des processus</ListItem>
-                        </UnorderedList>
+                    <Center size='md' as='span' m={'2'} padding='2' mt={'16'}>
+                        <Box padding={'5'} bg='orange.500' w={'80'} h='44' borderRadius={'2xl'}>
+                            <Text align={'center'}> Les protocols </Text>
+                            <UnorderedList textAlign={'justify'}>
+                                <ListItem> Ethereum </ListItem>
+                                <ListItem> Cardano</ListItem>
+                                <ListItem>UniSwap</ListItem>
+                                <ListItem>SushiSwap</ListItem>
+                                <ListItem>Cosmos</ListItem>
 
-                    </Box>
+                            </UnorderedList>
 
-                </Center>  
+                        </Box>
 
-                <Stack align={'center'} m='2'> 
-                            
-                            <Icon as={AiFillCaretDown}  w={12} h={12}  /> 
-                               
-                           </Stack>
-
-                <Center size='md' as='span' m={'2'} padding='2' mt={'16'}>
-                    <Box padding={'5'} bg='orange.500' w={'80'} h='44' borderRadius={'2xl'}>
-                        <Text align={'center'}> Les protocols </Text>
-                        <UnorderedList textAlign={'justify'}>
-                            <ListItem> Ethereum </ListItem>
-                            <ListItem> Cardano</ListItem>
-                            <ListItem>UniSwap</ListItem>
-                            <ListItem>SushiSwap</ListItem>
-                            <ListItem>Cosmos</ListItem>
-                            
-                        </UnorderedList>
-
-                    </Box>  
-
-                </Center>  
+                    </Center>
 
 
 
-            </Box>
+                </Box>
 
-            <Footer />
-        </VStack>
+                <Footer />
+            </VStack>
 
         </>
     );

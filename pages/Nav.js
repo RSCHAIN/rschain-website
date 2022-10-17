@@ -190,7 +190,7 @@ const MobileNav = () => {
     );
   };
 
-  const MobileNavItem = ({label, children, href} ) => {
+  const MobileNavItem = ({label, children, href,navItem} ) => {
     const { isOpen, onToggle } = useDisclosure();
   
     return (
