@@ -28,9 +28,9 @@ function audit(props) {
         <Nav/>
        
        <Flex
-       centerContent overflow="hidden"
-      maxw={'full'}
-      maxh={'2xl'}
+      centerContent overflow="hidden"
+      w={'full'}
+      minh={'2xl'}
       backgroundImage={
         'url(https://images.unsplash.com/photo-1600267175161-cfaa711b4a81?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80)'
       }
@@ -41,10 +41,13 @@ function audit(props) {
         justify={'center'}
         
         bgGradient={'linear(to-r, blackAlpha.600, transparent)'}>
-        <Stack maxW={'5xl'} align={'center'} spacing={6}>
+        <Stack maxW={'5xl'} align={'center'} spacing={{ base: 20, sm: 3, md: 5, lg: 20 }}>
           <Heading
             color={'white'}
-            w='-webkit-fit-content'
+            alignContent ='center'
+            textAlign={'center'}
+            m={{ sm: 4, md: 16, lg: 10 }}
+            p={{ sm: 5, md: 5, lg: 16 }}
            >
             ENSEMBLE BATISSONS UN MONDE PLUS SECURISE
           </Heading>
@@ -56,7 +59,7 @@ function audit(props) {
     </Flex>
          
             <Box  
-            centerContent overflow="hidden"
+             centerContent overflow="hidden"
             height={'md'}
             backgroundPosition='center'
             backgroundRepeat="no-repeat"
@@ -64,19 +67,22 @@ function audit(props) {
             bg={'orange.200'}
             >  
            
-                <Heading fontFamily={'fantasy'} paddingTop='14' textAlign={'center'}>
+                <Heading fontFamily={'fantasy'} paddingTop='14' textAlign={'center'} 
+               
+                >
                     Audits Informatique ?
                 </Heading>
 
                 <Center>
-                    <Text fontFamily={'heading'}> L’audit de sécurité est un diagnostic de l’état de sécurité de votre système d’information pour en  <br></br>
+                    <Text fontFamily={'heading'}  textAlign='center'
+                    > L’audit de sécurité est un diagnostic de l’état de sécurité de votre système d’information pour en  <br></br>
                         révéler d’éventuels failles ou dysfonctionnements qui pourraient compromettre vos activités.</Text>
                 </Center>  
                 <Heading fontFamily={'fantasy'} paddingTop='24' textAlign={'center'}>
                     la blockchain,C'est Quoi ?
                 </Heading> 
                 <Center>
-                    <Text fontFamily={'heading'}> L’audit de sécurité est un diagnostic de l’état de sécurité de votre système d’information pour en  <br></br>
+                    <Text fontFamily={'heading'}   textAlign={'center'} > L’audit de sécurité est un diagnostic de l’état de sécurité de votre système d’information pour en  <br></br>
                         révéler d’éventuels failles ou dysfonctionnements qui pourraient compromettre vos activités.</Text>
                 </Center>  
               
@@ -96,24 +102,24 @@ function audit(props) {
                 </Heading>
 
                 <Center>
-                    <Text fontFamily={'heading'}> L’audit de sécurité est un diagnostic de l’état de sécurité de votre système d’information pour en  <br></br>
+                    <Text fontFamily={'heading'}  textAlign={'center'} > L’audit de sécurité est un diagnostic de l’état de sécurité de votre système d’information pour en  <br></br>
                         révéler d’éventuels failles ou dysfonctionnements qui pourraient compromettre vos activités.</Text>
                 </Center>  
                 <Heading fontFamily={'fantasy'} paddingTop='14' textAlign={'center'}>
                     Audits des Smarts Contract ?
                 </Heading> 
                 <Center>
-                    <Text fontFamily={'heading'}> L’audit de sécurité est un diagnostic de l’état de sécurité de votre système d’information pour en  <br></br>
+                    <Text fontFamily={'heading'} textAlign={'center'} > L’audit de sécurité est un diagnostic de l’état de sécurité de votre système d’information pour en  <br></br>
                         révéler d’éventuels failles ou dysfonctionnements qui pourraient compromettre vos activités.</Text>
                 </Center>  
 
         {/**button with arrow icon */}
-        <Container maxW={'3xl'} mt={'-20'}>
+        <Container maxW={'3xl'}  centerContent overflow="hidden">
         <Stack
           as={Box}
           textAlign={'center'}
-          spacing={{ base: 8, md: 14 }}
-          py={{ base: 20, md: 36 }}>
+          spacing={{ base: 8, md: 8 ,sm:2 }}
+          py={{ base: 20, md: 6,sm:2}}>
          
          
           <Stack
