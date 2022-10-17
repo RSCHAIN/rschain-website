@@ -1,31 +1,37 @@
 import React from 'react';
 import {
-    Box
+    Box, Flex
 } from '@chakra-ui/react';
 
 import Banniere from './fistpagecontent/banniere';
 import Apropos from './fistpagecontent/apropos';
 import Team from './fistpagecontent/team';
 import Partenaire from './fistpagecontent/partenaire';
+import { Container } from 'postcss';
 
 
 export default function Content() {
 
     return (
         <>
-            <Box>
+         
+
+           
+            <Box  overflow='hidden'>
                 <Banniere />
             </Box>
 
-            <Box>
+            <Box overflow='hidden'>
                 <Apropos />
             </Box>
-            <Box>
+            <Box overflow='hidden'>
                 <Team />
             </Box>
-            <Box>
+            <Box overflow='hidden'>
                 <Partenaire />
             </Box>
+          
+         
         </>
     );
 }

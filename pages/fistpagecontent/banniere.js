@@ -7,7 +7,8 @@ import {
     Stack,
     Heading,
     Text,
-    Center
+    Center,
+    Hide
 } from '@chakra-ui/react';
 import { BiChevronLeft, BiChevronRight } from 'react-icons/bi';
 import Slider from 'react-slick';
@@ -84,6 +85,7 @@ export default function Banniere() {
                 />
                 {/* Left Icon */}
                 <IconButton
+                    
                     aria-label="left-arrow"
                     colorScheme="pink"
                     borderRadius="full"
@@ -93,7 +95,7 @@ export default function Banniere() {
                     transform={'translate(0%, -50%)'}
                     zIndex={2}
                     onClick={() => slider?.slickPrev()}>
-                    <BiChevronLeft size="40px" />
+                    <BiChevronLeft size="40px" /> 
                 </IconButton>
                 {/* Right Icon */}
                 <IconButton
@@ -109,19 +111,21 @@ export default function Banniere() {
                     <BiChevronRight size="40px" />
 
                 </IconButton>
+               
                 {/* Slider */}
                 <Slider {...settings} ref={(slider) => setSlider(slider)}>
                     {cards.map((card, index) => (
                         <Box
+                           
                             key={index}
-                            height={'xl'}
+                            height={{ base: 'xs', md: 'md', lg: 'xl' }}
                             position="relative"
                             backgroundPosition="center"
                             backgroundRepeat="no-repeat"
                             backgroundSize="cover"
                             backgroundImage={`url(${card.image})`}>
                             {/* This is the block you need to change, to customize the caption */}
-                            <Container size="container.lg" height="600px" position="relative">
+                            <Container size="container.lg" height="600px" position="relative" >
                                 <Stack
                                     spacing={6}
                                     w={'full'}
@@ -129,19 +133,6 @@ export default function Banniere() {
                                     position="absolute"
                                     top="20%"
                                     transform="translate(0, -50%)">
-
-                                    <Heading fontSize={{ base: 'xl', md: '3xl', lg: '4xl' }}
-                                        textAlign={'center'}
-                                        color={'black'}>
-                                        {card.title}
-                                    </Heading>
-
-                                    <Center fontSize={{ base: 'md', lg: 'lg' }} color='blackAlpha' fontWeight={'bold'}
-                                        fontFamily={'fantasy'}
-                                    >
-                                        {card.text}
-
-                                    </Center>
                                 </Stack>
                             </Container>
                         </Box>

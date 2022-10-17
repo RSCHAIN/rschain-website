@@ -15,8 +15,7 @@ import {
     Input,
     InputGroup,
     InputLeftElement,
-    Textarea,
-    Center,
+    Textarea
 } from '@chakra-ui/react';
 import Footer from './footer';
 import {
