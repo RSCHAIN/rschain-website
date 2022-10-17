@@ -52,8 +52,6 @@ function audit(props) {
             ENSEMBLE BATISSONS UN MONDE PLUS SECURISE
           </Heading>
           <Center> <Icon as={BsArrowDownCircleFill}  w={12} h={12} color='yellow' /> </Center>
-          
-       
         </Stack>
       </VStack>
     </Flex>

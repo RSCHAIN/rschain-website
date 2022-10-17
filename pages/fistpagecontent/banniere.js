@@ -62,11 +62,12 @@ export default function Banniere() {
 
     return (
         <>
-            <Box
+            <Box 
+                centerContent overflow="hidden"
                 position={'relative'}
                 height={'xl'}
                 width={'full'}
-                overflow={'hidden'}>
+                >
 
                 {/* CSS files for react-slick */}
                 <link

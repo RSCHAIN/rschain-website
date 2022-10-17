@@ -70,9 +70,9 @@ export default function Team() {
         </Stack>
       </Container>
     </Box>
-    <Center> 
+    <Center > 
     {Avatars.map((avat, index) => (
-      <Box
+      <Box   
       key={index}
 >    
 <Avatar src={avat.src} alt={avat.name} size={'2xl'} marginTop={'-10'} marginInline='2'/>
