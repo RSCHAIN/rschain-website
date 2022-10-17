@@ -6,7 +6,7 @@ import {
 export default function Partenaire() {
     return (
         <>   
-         <Container maxW={'5xl'} py={12} marginTop="50px" >  
+         <Container maxW={'5xl'} py={12} marginTop="50px" centerContent overflow="hidden">  
           <Box textAlign={'center'} fontSize='2xl' fontWeight={'bold'}  fontFamily={'heading'}
             _hover={{ bg: "", color: "gray.500" }}
           >  Ils Nous Font Confiance    </Box>
