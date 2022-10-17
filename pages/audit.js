@@ -78,10 +78,10 @@ function audit(props) {
                     > L’audit de sécurité est un diagnostic de l’état de sécurité de votre système d’information pour en  <br></br>
                         révéler d’éventuels failles ou dysfonctionnements qui pourraient compromettre vos activités.</Text>
                 </Center>  
-                <Heading fontFamily={'fantasy'} paddingTop='24' textAlign={'center'}  pt={{ sm:-6}}   >
+                <Heading fontFamily={'fantasy'} paddingTop='24' textAlign={'center'}   >
                     la blockchain,C'est Quoi ?
                 </Heading> 
-                <Center     pt={{ sm:-8}}>
+                <Center    p={{ sm: 3, md: 3, lg: 2 }}>
                     <Text fontFamily={'heading'}   textAlign={'center'} > L’audit de sécurité est un diagnostic de l’état de sécurité de votre système d’information pour en  <br></br>
                         révéler d’éventuels failles ou dysfonctionnements qui pourraient compromettre vos activités.</Text>
                 </Center>  
