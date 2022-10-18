@@ -135,10 +135,10 @@ export default function Conseils() {
 
                 </Container>
                 {/**smart contract section*/}
-                <Box colorScheme='yellow' bg={'orange.300'} w='100%' color='white' h={'2xl'} direction='row' borderRadius={'2xl'}>
+                <Box colorScheme='yellow' bg={'orange.300'} w='100%' color='white' h={'auto'} direction='row' borderRadius={'2xl'} >
 
-                    <Center size='md' as='span' m={'2'} padding='2' mt={'20'}>
-                        <Box padding={'5'} bg='orange.500' w={'auto'} h='auto' borderRadius={'2xl'}>
+                    <Center size='md' as='span' m={'2'} padding='2' mt={'4'}>
+                        <Box padding={{ base: '2', md:2 , lg: 5 }} bg='orange.500' w={{ base: 'auto', md:150, lg: 200 }} h='auto' borderRadius={'2xl'}>
                             <Text align={'center'} pb='4'  >   Nous developpons </Text>
                             <UnorderedList>
                                 <ListItem> Smart contract</ListItem>
@@ -153,12 +153,15 @@ export default function Conseils() {
 
                         <Stack align={'center'} m='12'>
 
-                            <Icon as={AiFillCaretRight} w={12} h={12} />
+                            <Icon as={AiFillCaretRight} w={{ base: '', md:10 , lg: 16 }} h={{ base: 'auto', md:10 , lg: 16 }}/>
 
                         </Stack>
 
 
-                        <Box padding={'5'} bg='orange.500' w={'auto'} h='auto' ml={'5'} borderRadius={'2xl'}>
+                        <Box padding={{ base: '2', md:2 , lg: 5 }} bg='orange.500'  h= {{ base: 'auto', md:'auto' , lg: 'auto' }} ml={'5'} borderRadius={'2xl'} 
+                         
+                         w={{ base: 'auto', md:150, lg: 200 }} 
+                        >
                             <Text align={'center'}> Usage </Text>
                             <UnorderedList>
                                 <ListItem>Certification et Tracabikité </ListItem>
@@ -166,8 +169,7 @@ export default function Conseils() {
                                 <ListItem>Gestion des droits numeriques</ListItem>
                                 <ListItem>sécurisation des processus</ListItem>
                                 <ListItem>sécurisation des processus</ListItem>
-                                <ListItem>sécurisation des processus</ListItem>
-                                <ListItem>sécurisation des processus</ListItem>
+                              
                             </UnorderedList>
 
                         </Box>
@@ -176,20 +178,19 @@ export default function Conseils() {
 
                     <Stack align={'center'} m='2'>
 
-                        <Icon as={AiFillCaretDown} w={12} h={12} />
+                        <Icon as={AiFillCaretDown} w={{ base: '', md:10 , lg: 16 }} h={{ base: 'auto', md:10 , lg: 16 }} />
 
                     </Stack>
 
-                    <Center size='md' as='span' m={'2'} padding='2' mt={'16'}>
-                        <Box padding={'5'} bg='orange.500' w={'80'} h='44' borderRadius={'2xl'}>
+                    <Center size='auto' as='span'  mt={{ base: 0, md:0 , lg: 16 }} >
+                        <Box  bg='orange.500'padding={{ base: '2', md:2 , lg: 5 }}   h= {{ base: 'auto', md:'auto' , lg: 'auto' }} ml={'5'} borderRadius={'2xl'} 
+                         mb={{ base: 2, md:2, lg: 4 }}
+                         w={{ base: 'auto', md:150, lg: 200 }} >
                             <Text align={'center'}> Les protocols </Text>
                             <UnorderedList textAlign={'justify'}>
                                 <ListItem> Ethereum </ListItem>
-                                <ListItem> Cardano</ListItem>
                                 <ListItem>UniSwap</ListItem>
                                 <ListItem>SushiSwap</ListItem>
-                                <ListItem>Cosmos</ListItem>
-
                             </UnorderedList>
 
                         </Box>

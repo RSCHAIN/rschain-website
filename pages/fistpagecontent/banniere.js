@@ -5,9 +5,6 @@ import {
     useBreakpointValue,
     Container,
     Stack,
-    Heading,
-    Text,
-    Center,
     Hide
 } from '@chakra-ui/react';
 import { BiChevronLeft, BiChevronRight } from 'react-icons/bi';
@@ -85,7 +82,7 @@ export default function Banniere() {
                 />
                 {/* Left Icon */}
                 <Hide  below='md'   > 
-                "md"
+               
                 <IconButton
                     
                     aria-label="left-arrow"
@@ -102,7 +99,7 @@ export default function Banniere() {
                 </Hide>
                 {/* Right Icon */}
                 <Hide  below='md'   > 
-                "md"
+               
                 <IconButton
                     aria-label="right-arrow"
                     colorScheme="pink"

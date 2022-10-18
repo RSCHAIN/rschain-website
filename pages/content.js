@@ -1,13 +1,13 @@
 import React from 'react';
 import {
-    Box, Flex, Hide, Show
+    Box,
 } from '@chakra-ui/react';
 
 import Banniere from './fistpagecontent/banniere';
 import Apropos from './fistpagecontent/apropos';
 import Team from './fistpagecontent/team';
 import Partenaire from './fistpagecontent/partenaire';
-import { Container } from 'postcss';
+
 
 
 export default function Content() {

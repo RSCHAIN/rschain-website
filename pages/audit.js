@@ -1,8 +1,8 @@
 import React from 'react';
-import { Box, Center,Stack, Heading,Text,Flex,VStack,useBreakpointValue,
+import { Box, Center,Stack, Heading,Text,Flex,VStack,
    Button,Icon,Arrow,useColorModeValue,
   Container,
-      createIcon,Badge,Image,StarIcon, Link } from '@chakra-ui/react';
+      createIcon, Hide, Show } from '@chakra-ui/react';
 import {BsArrowDownCircleFill} from "react-icons/bs";
 import Footer from './footer';
 import Nav from './Nav';
@@ -76,11 +76,11 @@ function audit(props) {
                     > L’audit de sécurité est un diagnostic de l’état de sécurité de votre système d’information pour en  <br></br>
                         révéler d’éventuels failles ou dysfonctionnements qui pourraient compromettre vos activités.</Text>
                 </Center>  
-                <Heading fontFamily={'fantasy'} paddingTop='24' textAlign={'center'}   >
+                <Heading fontFamily={'fantasy'} paddingTop='24' textAlign={'center'} p={{ base: 2, md: 2, lg: 4 }} >
                     la blockchain,C'est Quoi ?
                 </Heading> 
-                <Center    p={{ sm: 3, md: 3, lg: 2 }}>
-                    <Text fontFamily={'heading'}   textAlign={'center'} > L’audit de sécurité est un diagnostic de l’état de sécurité de votre système d’information pour en  <br></br>
+                <Center    >
+                    <Text fontFamily={'heading'}   textAlign={'center'} p={{ base: -2, md: 2, lg: -4 }}> L’audit de sécurité est un diagnostic de l’état de sécurité de votre système d’information pour en  <br></br>
                         révéler d’éventuels failles ou dysfonctionnements qui pourraient compromettre vos activités.</Text>
                 </Center>  
               
@@ -112,6 +112,7 @@ function audit(props) {
                 </Center>  
 
         {/**button with arrow icon */}
+        <Hide below='md'   > 
         <Container maxW={'3xl'}  centerContent overflow="hidden">
         <Stack
           as={Box}
@@ -159,7 +160,23 @@ function audit(props) {
           </Stack>
         </Stack>
       </Container>
-          
+      </Hide>
+      <Show below='md'>
+        <Center>  
+        <Button  
+             
+              colorScheme={'green'}
+              bg={'green.400'}
+              rounded={'full'}
+              px={6}
+              _hover={{
+                bg: 'orange.500',
+              }}>
+              Contatez un expert
+           
+        </Button>
+        </Center>
+      </Show>
                
             </Box>
           
