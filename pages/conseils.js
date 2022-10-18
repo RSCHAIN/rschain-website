@@ -135,7 +135,7 @@ export default function Conseils() {
 
                 </Container>
                 {/**smart contract section*/}
-                <Box colorScheme='yellow' bg={'orange.300'} w='100%' color='white' h={'auto'} direction='row' borderRadius={'2xl'} >
+                <Box colorScheme='yellow' bg={'orange.300'} w='100%' color='white' h={'auto'} direction='row' borderRadius={'2xl'} centerContent overflow="hidden">
 
                     <Center size='md' as='span' m={'2'} padding='2' mt={'4'}>
                         <Box padding={{ base: '2', md:2 , lg: 5 }} bg='orange.500' w={{ base: 'auto', md:150, lg: 200 }} h='auto' borderRadius={'2xl'}>

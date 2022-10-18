@@ -164,7 +164,7 @@ function audit(props) {
       <Show below='md'>
         <Center>  
         <Button  
-             
+              size={{base:'xs',md:'sm'}}
               colorScheme={'green'}
               bg={'green.400'}
               rounded={'full'}
