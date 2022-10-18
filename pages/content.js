@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-    Box, Flex
+    Box, Flex, Hide, Show
 } from '@chakra-ui/react';
 
 import Banniere from './fistpagecontent/banniere';
@@ -14,16 +14,14 @@ export default function Content() {
 
     return (
         <>
-         
-
-           
             <Box  overflow='hidden'>
                 <Banniere />
             </Box>
-
+            
             <Box overflow='hidden'>
                 <Apropos />
             </Box>
+          
             <Box overflow='hidden'>
                 <Team />
             </Box>

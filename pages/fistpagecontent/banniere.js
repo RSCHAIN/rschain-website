@@ -84,6 +84,8 @@ export default function Banniere() {
                     href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
                 />
                 {/* Left Icon */}
+                <Hide  below='md'   > 
+                "md"
                 <IconButton
                     
                     aria-label="left-arrow"
@@ -97,7 +99,10 @@ export default function Banniere() {
                     onClick={() => slider?.slickPrev()}>
                     <BiChevronLeft size="40px" /> 
                 </IconButton>
+                </Hide>
                 {/* Right Icon */}
+                <Hide  below='md'   > 
+                "md"
                 <IconButton
                     aria-label="right-arrow"
                     colorScheme="pink"
@@ -111,6 +116,7 @@ export default function Banniere() {
                     <BiChevronRight size="40px" />
 
                 </IconButton>
+                </Hide>
                
                 {/* Slider */}
                 <Slider {...settings} ref={(slider) => setSlider(slider)}>
