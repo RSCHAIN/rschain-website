@@ -61,7 +61,8 @@ export default function Nav() {
                     </Flex>
                 </Flex>
                 <Stack
-                    ml={'20'}
+                    overflow={'auto'}
+                    ml={{ base: 3, md: 0,lg : 20 }}
                     flex={{ base: 3, md: 0 }}
                     justify={'flex-end'}
                     direction={'row'}
