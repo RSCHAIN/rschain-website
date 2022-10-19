@@ -61,7 +61,7 @@ export default function Banniere() {
     return (
         <>
             <Box 
-                overflow="hidden"
+                centerContent  overflow='-moz-hidden-unscrollable'
                 position={'relative'}
                 height={{ base: 'auto', md: 'auto', lg: 'auto' }}
                 width={{ base: 'auto', md: 'auto', lg: 'auto' }}
@@ -121,6 +121,7 @@ export default function Banniere() {
                         <Box
                            
                             key={index}
+                            centerContent overflow={'auto'}
                             height={{ base: 'xs', md: 'xs', lg: 'xl' }}
                             minw={{ base: 'auto', md: 'xs', lg: 'xl' }}
                             position="relative"
