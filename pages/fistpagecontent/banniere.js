@@ -121,7 +121,7 @@ export default function Banniere() {
                         <Box
                            
                             key={index}
-                            height={{ base: 'xs', md: 'md', lg: 'xl' }}
+                            height={{ base: 'xs', md: 'sm', lg: 'xl' }}
                             position="relative"
                             backgroundPosition="center"
                             backgroundRepeat="no-repeat"
@@ -131,8 +131,8 @@ export default function Banniere() {
                             <Container size="container.lg" height="600px" position="relative" >
                                 <Stack
                                     spacing={6}
-                                    w={'full'}
-                                    maxW={'lg'}
+                                    w={{ base: 'auto', md: 'sm', lg: 'xl' }}
+                                    maxW= {{ base: 'auto', md: 'sm', lg: 'xl' }}
                                     position="absolute"
                                     top="20%"
                                     transform="translate(0, -50%)">
