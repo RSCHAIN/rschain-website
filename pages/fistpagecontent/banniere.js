@@ -63,8 +63,8 @@ export default function Banniere() {
             <Box 
                 centerContent overflow="hidden"
                 position={'relative'}
-                height={'xl'}
-                width={'full'}
+                height={{ base: 'auto', md: 'auto', lg: 'auto' }}
+                width={{ base: 'auto', md: 'auto', lg: 'auto' }}
                 >
 
                 {/* CSS files for react-slick */}
@@ -98,7 +98,7 @@ export default function Banniere() {
                 </IconButton>
                 </Hide>
                 {/* Right Icon */}
-                <Hide  below='md'   > 
+                <Hide  below='md'> 
                
                 <IconButton
                     aria-label="right-arrow"
@@ -128,11 +128,10 @@ export default function Banniere() {
                             backgroundSize="cover"
                             backgroundImage={`url(${card.image})`}>
                             {/* This is the block you need to change, to customize the caption */}
-                            <Container size="container.lg" height="600px" position="relative" >
+                            <Container size={{ base: 'auto', md: 'sm', lg: 'xl' }} height={{ base: 'auto', md: 'sm', lg: 'xl' }} position="relative" >
                                 <Stack
                                     spacing={6}
                                     w={{ base: 'auto', md: 'sm', lg: 'xl' }}
-                                    maxW= {{ base: 'auto', md: 'sm', lg: 'xl' }}
                                     position="absolute"
                                     top="20%"
                                     transform="translate(0, -50%)">
