@@ -61,7 +61,7 @@ export default function Banniere() {
     return (
         <>
             <Box 
-                centerContent overflow="hidden"
+                overflow="hidden"
                 position={'relative'}
                 height={{ base: 'auto', md: 'auto', lg: 'auto' }}
                 width={{ base: 'auto', md: 'auto', lg: 'auto' }}
@@ -81,7 +81,7 @@ export default function Banniere() {
                     href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
                 />
                 {/* Left Icon */}
-                <Hide  below='md'   > 
+                <Hide  below='md'> 
                
                 <IconButton
                     
@@ -121,7 +121,8 @@ export default function Banniere() {
                         <Box
                            
                             key={index}
-                            height={{ base: 'xs', md: 'sm', lg: 'xl' }}
+                            height={{ base: 'xs', md: 'xs', lg: 'xl' }}
+                            minw={{ base: 'auto', md: 'xs', lg: 'xl' }}
                             position="relative"
                             backgroundPosition="center"
                             backgroundRepeat="no-repeat"
@@ -131,7 +132,7 @@ export default function Banniere() {
                             <Container size={{ base: 'auto', md: 'sm', lg: 'xl' }} height={{ base: 'auto', md: 'sm', lg: 'xl' }} position="relative" >
                                 <Stack
                                     spacing={6}
-                                    w={{ base: 'auto', md: 'sm', lg: 'xl' }}
+                                    w={{ base: 'auto', md: 'xs', lg: 'xl' }}
                                     position="absolute"
                                     top="20%"
                                     transform="translate(0, -50%)">

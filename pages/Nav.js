@@ -13,7 +13,8 @@ import {
     PopoverContent,
     useColorModeValue,
     useDisclosure,
-    Image
+    Image,
+    Show
 } from '@chakra-ui/react';
 
 import {
@@ -74,8 +75,9 @@ export default function Nav() {
                         _hover={{ textDecoration: 'none', color: 'blackAlpha' }}>
                         Sign In
                     </Button>
+                    <Show  above='sm'  > 
                     <Button
-                        display={{ base: 'none', md: 'inline-flex' }}
+                        display={{ base: 'inline', md: 'inline-flex' }}
                         fontSize={'sm'}
                         fontWeight={600}
                         color={'white'}
@@ -86,6 +88,7 @@ export default function Nav() {
                         }}>
                         Sign Up
                     </Button>
+                    </Show>
                 </Stack>
             </Flex>
 
