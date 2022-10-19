@@ -75,7 +75,7 @@ export default function Nav() {
                         _hover={{ textDecoration: 'none', color: 'blackAlpha' }}>
                         Sign In
                     </Button>
-                    <Show  above='sm'  > 
+                   
                     <Button
                         display={{ base: 'inline', md: 'inline-flex' }}
                         fontSize={'sm'}
@@ -88,7 +88,7 @@ export default function Nav() {
                         }}>
                         Sign Up
                     </Button>
-                    </Show>
+                 
                 </Stack>
             </Flex>
 
