@@ -56,10 +56,7 @@ export default function Apropo() {
                         </Text>
                         <Heading>Rschain</Heading>
                         <Text color={'gray.500'} fontSize={'lg'}>
-                        Fondé par le Dr. ADJA Elloh Yves Christian, enseignant-chercheur a l'EPITA, 
-                        RSchain voit le jour en Octobre 2021 en FRANCE. Sis à Massy dans l'Essone,
-                        RSchain entreprise axé sur la recherche et l'implémentation des nouvelles 
-                        technologies dans le domaine de la blockchain.<br> </br>
+           
 
                         Filiale
                         La première filiale d'RSCHAIN voit le jour en avril 2022 en Côte d'Ivoire dans la 
@@ -105,10 +102,7 @@ export default function Apropo() {
                         </Text>
                         <Heading>Rschain</Heading>
                         <Text color={'gray.500'} fontSize={'lg'}>
-                        Rschain naît dans l'objectif premier de démocratiser la technologie Blockchain et en Côte d'Ivoire et dans toute l’Afrique.
-                        Notre cœur de métier est la Blockchain dans toutes ses formes. Nous croyons fermement que
-                        La Blockchain peut améliorer non seulement le quotidien des Ivoiriens, mais aussi celui de tous les Africains.
-
+                     
                         </Text>
                     
                     </Stack>
