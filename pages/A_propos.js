@@ -61,9 +61,10 @@ export default function Apropo() {
                         RSchain entreprise axé sur la recherche et l'implémentation des nouvelles 
                         technologies dans le domaine de la blockchain.<br/>
 
-                        Filiale <br/>
-                        La première filiale d'RSCHAIN voit le jour en avril 2022 en Côte d'Ivoire dans la 
+                       <Heading>Filiale </Heading> 
+                        <Text> La première filiale d'RSCHAIN voit le jour en avril 2022 en Côte d'Ivoire dans la 
                         commune d'Abidjan. Sis à Cocody angré 8e tranche.
+                        </Text>
                         </Text>
                        
                     </Stack>
@@ -104,7 +105,7 @@ export default function Apropo() {
                             Notre Mission
                         </Text>
                         <Heading>Rschain</Heading>
-                        <Text color={'gray.500'} fontSize={'lg'}>
+                        <Text color={'gray.500'} fontSize={'xl'}>
                         Rschain naît dans l'objectif de faire évoluer et démocratiser la technologie 
                         Blockchain à travers le conseil, la recherche et l'enseignement. Notre cœur de
                         métier est la Blockchain dans toutes ses formes. Nous croyons fermement que 
